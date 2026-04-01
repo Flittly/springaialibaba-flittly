@@ -8,14 +8,24 @@
     <artifactId>SpringAiAlibaba-flittly</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+
     <modules>
         <module>Saa01</module>
+        <module>Saa02</module>
+        <module>Saa03</module>
+        <module>Saa08</module>
+        <module>Saa04</module>
+        <module>Saa05</module>
+        <module>Saa06</module>
+        <module>Saa07</module>
     </modules>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>21</java.version>
         <spring-boot.version>3.5.5</spring-boot.version>
         <spring-ai.version>1.1.2</spring-ai.version>
         <SpringAIAlibaba.version>1.1.2.0</SpringAIAlibaba.version>
@@ -49,5 +59,25 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-boot.version}</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <repositories>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
 </project>

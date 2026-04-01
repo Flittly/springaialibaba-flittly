@@ -1,0 +1,17 @@
+server:
+  port: 8004
+
+  servlet:
+    encoding:
+      enabled: true
+      force: true
+      charset: UTF-8
+
+spring:
+  application:
+    name: Saa07
+
+  # ====SpringAIAlibaba Config=============
+  ai:
+    dashscope:
+      api-key: sk-cae13e65ee4a4e38a244e1810f8e4174

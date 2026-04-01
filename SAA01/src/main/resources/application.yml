@@ -1,0 +1,16 @@
+server:
+  port: 8001
+
+# 大模型对话中文UTF8编码处理
+  servlet:
+    encoding:
+      enabled: true
+      force: true
+      charset: UTF-8
+
+spring:
+  application:
+    name: Saa01
+  ai:
+    dashscope:
+      api-key: sk-cae13e65ee4a4e38a244e1810f8e4174
