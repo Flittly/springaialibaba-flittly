@@ -9,7 +9,7 @@ server:
 
 spring:
   application:
-    name: Saa07
+    name: Saa09
 
   # ====SpringAIAlibaba Config=============
   ai:
