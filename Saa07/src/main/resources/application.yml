@@ -14,4 +14,4 @@ spring:
   # ====SpringAIAlibaba Config=============
   ai:
     dashscope:
-      api-key: sk-cae13e65ee4a4e38a244e1810f8e4174
+      api-key: ${DASHSCOPE_API_KEY}

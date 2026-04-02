@@ -39,12 +39,13 @@ build/
 .DS_Store
 
 ### Spring AI Alibaba Subprojects - YAML configs ###
-Saa01/src/main/resources/*.yml
-Saa02/src/main/resources/*.yml
-Saa03/src/main/resources/*.yml
-Saa04/src/main/resources/*.yml
-Saa05/src/main/resources/*.yml
-Saa06/src/main/resources/*.yml
-Saa07/src/main/resources/*.yml
-Saa08/src/main/resources/*.yml
-Saa09/src/main/resources/*.yml
+/Saa01/src/main/resources/application.yml
+/Saa02/src/main/resources/application.yml
+/Saa03/src/main/resources/application.yml
+/Saa04/src/main/resources/application.yml
+/Saa05/src/main/resources/application.yml
+/Saa06/src/main/resources/application.yml
+/Saa07/src/main/resources/application.yml
+/Saa08/src/main/resources/application.yml
+/Saa09/src/main/resources/application.yml
+/Saa10/src/main/resources/application.yml

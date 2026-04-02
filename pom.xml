@@ -19,6 +19,7 @@
         <module>Saa06</module>
         <module>Saa07</module>
         <module>Saa09</module>
+        <module>Saa10</module>
     </modules>
 
     <properties>
