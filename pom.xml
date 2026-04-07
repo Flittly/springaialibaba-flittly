@@ -21,6 +21,8 @@
         <module>Saa09</module>
         <module>Saa10</module>
         <module>Saa11</module>
+        <module>Saa12</module>
+        <module>Saa13</module>
     </modules>
 
     <properties>

@@ -1,0 +1,35 @@
+server:
+  port: 8004
+
+  servlet:
+    encoding:
+      enabled: true
+      force: true
+      charset: UTF-8
+
+spring:
+  application:
+    name: Saa12
+
+  # ====SpringAIAlibaba Config=============
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API_KEY}
+    # 向量数据库配置
+    vectorstore:
+      redis:
+        # 自动初始化schema
+        initialize-schema: true
+        # 索引名称
+        index-name: custom-index
+        # key前缀
+        prefix: custom-prefix
+
+  # ==========redis config ===============
+  data:
+    redis:
+      host: localhost
+      port: 6380
+      database: 0
+      connect-timeout: 3s
+      timeout: 2s
