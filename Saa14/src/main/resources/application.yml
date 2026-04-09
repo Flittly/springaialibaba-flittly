@@ -1,0 +1,24 @@
+server:
+  port: 8014
+
+  servlet:
+    encoding:
+      enabled: true
+      force: true
+      charset: UTF-8
+
+spring:
+  application:
+    name: Saa14
+
+  # ====mcp-server Config=============
+  ai:
+    mcp:
+      server:
+        # 异步类型
+        type: async
+        protocol: STREAMABLE
+        # 服务名称
+        name: customer-define-mcp-server
+        # 服务版本
+        version: 1.0.0

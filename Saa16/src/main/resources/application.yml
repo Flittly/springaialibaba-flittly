@@ -1,0 +1,27 @@
+server:
+  port: 8015
+
+  servlet:
+    encoding:
+      enabled: true
+      force: true
+      charset: UTF-8
+
+spring:
+  application:
+    name: Saa15
+
+  # ====SpringAIAlibaba Config=============
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API_KEY}
+
+  # ====mcp-client Config=============
+    mcp:
+      client:
+        # 配置百度MCP服务的连接信息
+        servers:
+          - name: baidu-mcp
+            type: stdio           # 使用标准IO通信
+            command: npx          # 通过npx运行
+            args: -y,@bot舅舅/baidu-mcp-server

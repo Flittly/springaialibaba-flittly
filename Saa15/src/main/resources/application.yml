@@ -1,0 +1,35 @@
+server:
+  port: 8015
+
+  servlet:
+    encoding:
+      enabled: true
+      force: true
+      charset: UTF-8
+
+spring:
+  application:
+    name: Saa15
+
+  # ====SpringAIAlibaba Config=============
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API_KEY}
+
+  # ====mcp-client Config=============
+    mcp:
+      client:
+        # 异步类型
+        type: async
+        # 请求超时时间
+        request-timeout: 60s
+        # 启用工具回调
+        toolcallback:
+          enabled: true
+
+        # SSE连接配置
+        streamable-http:
+          connections:
+            mcp-server1:
+              url: http://localhost:8014
+              endpoint: /mcp
