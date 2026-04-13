@@ -1,5 +1,5 @@
 server:
-  port: 8015
+  port: 8001
 
   servlet:
     encoding:
@@ -9,14 +9,13 @@ server:
 
 spring:
   application:
-    name: Saa15
+    name: Saa09
 
   # ====SpringAIAlibaba Config=============
   ai:
     dashscope:
       api-key: ${DASHSCOPE_API_KEY}
 
-  # ====mcp-client Config=============
     mcp:
       client:
         # 请求超时时间
@@ -27,3 +26,12 @@ spring:
         # STDIO服务端配置
         stdio:
           servers-configuration: classpath:/mcp-server.json5
+
+  # ==========redis config ===============
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      database: 0
+      connect-timeout: 3s
+      timeout: 2s

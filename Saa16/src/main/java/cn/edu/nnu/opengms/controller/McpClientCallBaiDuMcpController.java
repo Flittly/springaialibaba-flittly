@@ -18,13 +18,13 @@ public class McpClientCallBaiDuMcpController {
     private ChatModel chatModel;
 
     @GetMapping("/mcp/chat")
-    public Flux<String> chat(String msg)
+    public Flux<String> chat(@RequestParam(name = "msg") String msg)
     {
         return chatClient.prompt(msg).stream().content();
     }
 
     @RequestMapping("/mcp/chat2")
-    public Flux<String> chat2(String msg)
+    public Flux<String> chat2(@RequestParam(name = "msg") String msg)
     {
         return chatModel.stream(msg);
     }
