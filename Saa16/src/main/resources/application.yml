@@ -14,7 +14,7 @@ spring:
   # ====SpringAIAlibaba Config=============
   ai:
     dashscope:
-      api-key: ${DASHSCOPE_API_KEY}
+      api-key:
 
   # ====mcp-client Config=============
     mcp:
